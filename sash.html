@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+.border{
+ border:1px solid rgb(202, 202, 202); 
+}
+
+.siderbar{
+    width: 20%;
+    height: 50px;
+}
+
+.content{
+    width: 80%;
+    height: 1500px;
+
+    background-color: #F1F1F1;
+}
+.mybody{
+    display: flex;
+}
+
+.logoimg{
+    height: 35px;
+    margin-left: 50px;
+}
+.logotext{
+    height: 25px;
+    margin-left: 8px;
+   
+    margin-top: 12px;
+}
+
+.logodiv{
+ 
+display: flex;
+margin: 10px;
+ 
+}
+
+.topheader{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchicon{
+
+    display: flex;
+    justify-content: center;
+    color: #2F4CDD;
+     
+    align-items: center;
+
+    width: 200px;
+
+
+}
+
+.search{
+    background-color: #eee;
+    padding: 8px;
+margin-left: 20px;
+    border-radius: 5px;
+}
+
+.inputsearch{
+
+    background-color: #eee;
+    border: none;
+    width: 120px;
+   
+    
+    
+}
+.inputsearch:hover{
+    border:none;
+    outline: none;
+}
+
+.inputsearch:focus{
+    border: none;
+    outline: none;
+    
+}
+
+.icolor{
+    margin: 4px;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #FFEAE6;
+}
+
+
+
+.box-minu img{
+    width:30px; 
+    height: 30px;
+    border-radius: 70px;
+    margin-top: -5px;
+    margin-left: 20px;
+
+
+    }
+    .box-minu ul{
+        list-style: none;
+        display: flex;
+        padding: 10;
+        margin-left: 300px;
+        margin-top: 20px;
+        color: #2F4CDD;
+        
+        
+        
+
+    }
+    .box-minu ul li{
+        padding-left: 30px;
+        list-style-type: none;
+        margin-bottom: -40px;
+        justify-content: space-between;
+       
+    }
+    .main{
+        margin-left: 10px;
+        font-size: 13px;
+        color: rgb(115, 115, 117);
+        margin-top: 35px;
+    }
+    .logominu  {
+
+        list-style: none;
+        display: block;
+        list-style-type: none;
+        padding: -10px;
+        margin-left: 20px;
+        margin-top: 12px;
+       
+        
+        display: flex;
+    }
+    .logominu a{
+        text-decoration: none;
+        
+        color: #2F4CDD;
+    }
+    .logominu  :hover{
+    color: black;
+       
+    }
+    
+.side_menu ul {
+    list-style: none;
+     margin: 0px;
+     padding: 10px;
+}
+.side_menu ul li i{
+    color: #2F4CDD;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 12px;
+}
+.side_menu ul li select{
+    background: none;
+    outline: none;
+    border: none;
+}
+.txt{
+    color: gray;
+    font-size: 15px;
+    margin-left:25px;
+}
+.user{
+    width: 220px;
+    
+    background-color: rgb(255, 255, 255);
+    margin-left: 50px;
+    padding-left: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 20px;
+    text-align: left;
+    line-height: 30px;
+    font-family: sans-serif;
+    
+
+}
+.mycenter{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.Dashboard1{
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.users{
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+
+.users .user{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    
+}
+
+.user h5{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.user h1{
+    font-size: 25px;
+}
+.user h6{
+    margin-left: 5px;
+    font-size: 15px;
+    color: rgba(166, 53, 223, 0.525);
+}
+.img img{
+    width: 90px;
+    height: 90px;
+    margin-top: 80px;
+    margin-left: -100px;
+
+}
+
+.profile_text{
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: gray;
+    margin-top: 100px;
+}
+.profile_box{
+    width: 95%;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.img_box img{
+    width: 95%;
+    height: 300px;
+    padding: 20px;
+    
+    
+};
+
+.profile_box .buttons{
+   margin-top: 90px;
+   background: rgb(205, 255, 255);
+}
+.footer_box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 250px;
+    margin-top: 20%;
+
+}
+.footer_box img{
+    width: 90px;
+    height:70px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+.footer_box h4{
+    color: rgb(45, 31, 94);
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+.icons_box{
+    margin-left: 45%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+
+.icons_box .icon {
+    color: rgb(37, 141, 210);
+    margin-left: 10px;
+    padding: 10px;
+
+}
+.buttons{
+    margin-top: -300px;
+    margin-left:750px;
+  
+}
+.buttons button{
+    background-color: rgb(31, 202, 188);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+
+   
+}
+.buttons button i{
+    padding-right: 6px;
+  
+}
+
+.layout{
+            
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 40px;
+    border-bottom: 0.5px solid rgb(23, 9, 9);
+    display: inline-block;
+    margin-top: 20px;
+    
+    
+
+}
+.ya{
+font-size: 20px;
+margin-left: 30px;
+color: rgb(0, 0, 0);
+text-align: left;
+
+}
+.layout h2{
+font-size: 20px;
+margin-top: 30px;
+margin-left: 10px;
+}
+#input{
+margin-left: 10px;
+width: 350px;
+height: 30px;
+border-radius: 5px ;
+color: rgb(146, 142, 142);
+border-color: rgb(185, 185, 185);
+}
+.layout h3{
+font-size: 20px;
+margin-top: 5px;
+margin-left: 10px;
+}
+.layout h4{
+font-size: 17px;
+margin-top: 10px;
+margin-left: 10px;
+bottom: unset;
+}
+button{
+margin-left: 10px;
+background-color: rgb(12, 111, 186);
+border-radius: 10px;
+text-align: center;
+color:white;
+cursor: pointer;
+width: 90px;
+height: 40px;
+
+}
+.ja{
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 70px;
+  
+}
+.layour{
+
+background-color: white;
+width: 400px;
+    height: 350px;
+border-radius: 10px;
+box-shadow: gray;
+margin-left: 80px;
+border-bottom: 0.5px solid rgb(23, 9, 9);
+display: inline-block; 
+
+}
+.m{
+    font-size: large;
+    margin-left: 20px;
+    color: rgb(39, 36, 36);
+   text-align: left;
+}
+.layour h2{
+   
+        font-size: 17px;
+        margin-top:20px;
+        margin-left: 10px;
+
+}
+#inpu{
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px ;
+    color: rgb(146, 142, 142);
+    border-color: rgb(228, 224, 224);
+    margin-left: 45px;
+   
+}
+#inpu1  {
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px ;
+    color: rgb(146, 142, 142);
+    border-color: rgb(228, 224, 224);
+    margin-left: 35px;
+   
+}
+#inpu2  {
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px ;
+    color: rgb(146, 142, 142);
+    border-color: rgb(228, 224, 224);
+    margin-left: 10px;
+   
+}
+.check{
+    display: flex;
+
+}
+.check input{
+   margin-bottom: 15px;
+   margin-left: 20px;
+    
+}
+.layour h3{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.layour h4{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    bottom: unset;
+}
+button{
+    margin-left: 10px;
+    background-color: rgb(12, 111, 186);
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    margin-top: 20PX;
+}
+.btn{
+    color:white;
+    background-color: rgb(140, 0, 255);
+    border: none;
+    font-size: larger;
+    width: 80px;
+    border: 10px;
+    height: 30px;
+    border-radius: 5px; 
+}
+
+
+
+    
+</style>
+
+</head>
+<body>
+
+    <div class="mybody">
+
+        <div class="siderbar border">
+
+<!-- logo div -->
+<div class="logodiv">
+    <img    src="img/logo sash.jfif" class="logoimg">
+    
+    
+
+    
+</div> <div class="side_menu">
+    <ul>
+    <p class="txt">Menu</p>
+    <br><br>
+    <li><i class="fa-sharp fa-solid fa-house"></i>Dashboard</li>
+    <p class="txt">US KIT</p><br>
+    <li><i class="fa-solid fa-gamepad"></i><select><option>APPS</option></select></li><br>
+    <li><i class="fa-solid fa-volleyball"></i><select><option>Bootstrap</option></select></li><br>
+    <li><i class="fa-solid fa-pager"></i>Landing page</li><br>
+    <p class="txt">PRE-PUILD PAGES</p><br>
+    <li><i class="fa-sharp fa-solid fa-file-circle-plus"></i><select><option>pages</option></select></li><br>
+    <li><i class="fa-sharp fa-solid fa-cart-plus"></i><select><option>E-commerce</option></select></li><br>
+    <p class="txt">File-manager</p><br>
+    <li><i class="fa-sharp fa-solid fa-cart-plus"></i>Authenication</li><br>
+    <li><i class="fa-sharp fa-solid fa-cart-plus"></i>Maps</li><br>
+    <li><i class="fa-sharp fa-solid fa-icons"></i>Charts</li><br>
+    <li><i class="fa-sharp fa-solid fa-icons"></i>Icons</li><br>
+    
+    </ul>
+    
+    </div>
+
+            
+   
+<!--   end logo -->
+
+        </div>
+        <div class="content border">
+            
+<!--top header-->
+
+<div class="topheader">
+
+    <div class="searchicon">
+        <i class="fa-solid fa-bars-staggered"></i>
+       <div class="search">
+        <input  type="text" placeholder="Search" class="inputsearch">
+        <i class="fa fa-magnifying-glass"></i>
+
+       
+       </div>
+    </div>
+       <div class="box-minu">
+        <ul>
+            <li><i class="fa-solid fa-globe"></i>Engilsh</i></li>
+            <li><i class="fa-solid fa-moon"></i></li>
+            <li><i class="fa-sharp fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-compress"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li><i class="fa-solid fa-message"></i></li>
+            <li> <i class="fa-solid fa-bars-staggered"></i></li>
+            <li><img src="img/photo.jpg" alt=""></li>
+            <li><i class="fa-solid fa-gear"></i></li>
+        </ul>
+     </div>
+</div>
+<!--end top header-->
+<h4 class="Dashboard1">Dashboard 01</h4>
+<div class="mycenter">
+
+<div class="users">
+
+    <div class="user">
+     <h5>Total users</h5>
+     <h2>44,278</h2>
+     <h6 style="color: rgba(53, 183, 223, 0.525);">5% last week</h6>
+   </div>
+   <div class="img">
+    <img src="img/dashboard.png" alt="">
+   </div>
+</div>
+<div class="users">
+
+    <div class="user">
+     <h5>Total profit</h5>
+     <h2>78,978</h2>
+     <h6 style="color: rgba(223, 53, 186, 0.525);">5% last day</h6>
+   </div>
+   <div class="img">
+    <img src="img/dashboard.png" alt="">
+   </div>
+</div>
+<div class="users">
+
+    <div class="user">
+     <h5>Total expenses</h5>
+     <h2>67,278</h2>
+     <h6 style="color: rgba(53, 223, 53, 0.525);">5% last week</h6>
+   </div>
+   <div class="img">
+    <img src="img/dashboard.png" alt="">
+   </div>
+</div>
+<div class="users">
+
+    <div class="user">
+     <h5>Total COSTS</h5>
+     <h2>44,578</h2>
+     <h6 style="color: rgba(206, 219, 17, 0.525);">5% last Month</h6>
+   </div>
+   <div class="img">
+    <img src="img/dashboard.png" alt="">
+   </div>
+</div>
+
+
+
+
+</div>
+<!--------------------------------------------------------------------------------->
+<h4 class="profile_text"> profile</h4>
+<div class="profile_box">
+    <div class="img_box">    
+    <img src="img/www.jpg" alt="">            
+    </div>
+    <div class="buttons">
+        <button><i class="fa-sharp fa-solid fa-wifi"></i>Follow</button>
+        <button><i class="fa-sharp fa-solid fa-message"></i>Message</button>
+    </div>
+    <div class="footer_box">
+        <img src="img/photo.jpg" alt="">
+        <h4>abdirhman <br> Web Developer</h4>
+  
+        <div class="icons_box">
+            
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+               </div>
+               <div class="icon">
+                  <i class="fa-brands fa-square-twitter"></i>
+               </div>
+              
+               <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
+            
+               </div>
+               <div class="icon">  
+                  <i class="fa-brands fa-square-whatsapp"></i>
+              </div>
+               <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+          
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------->
+
+<h4 class="Dashboard1"> Form-Layouts</h4>
+<div class="layout">
+    <h1 class="ya">Veritcal Form</h1>
+    <h2> Email address</h2>
+    <input type="text" placeholder="Enter Email" id="input">
+    <h3>Password</h3>
+    <input type="text" placeholder="Password" id="input">
+    <div class="check"> 
+    <input type="checkbox"placeholder="check me out " >
+    <h4>check me out</h4>
+</div>
+   
+<button class="btn" type="button"> submit</button>
+
+
+</div>
+<!------------------>
+
+<div class="layour">
+    <h1 class="ya">Horizantal Form</h1>
+    <div class="check">
+    <h2>User</h2>
+    <input type="text" placeholder="Name" id="inpu" style="margin-top: 20px;">
+    </div>
+    <div class="check">
+    <h3>Email</h3>
+    <input type="text" placeholder="Email" id="inpu1"></div>
+    <div class="check">
+    <h4>Password</h4>
+    <input type="text" placeholder="password" id="inpu2"></div>
+    <div class="check"> 
+        <input type="checkbox"placeholder="check me out " >
+        <h4>check me out</h4>
+    </div>
+    <button class="btn" type="button"> sing in</button>
+    <button class="btn" type="button" style="background-color: rgb(61, 201, 236);"> Cancel</button> 
+
+</div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
